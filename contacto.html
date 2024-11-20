@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1> ESCRIBE TUS DATOS PERSONALES </h1>
+	<form>
+		<fieldset>
+			<legend> DATOS PERSONALES </legend>
+			<label> NOMBRES </label>
+			<input type="text"> <br>
+			<br>
+			<label> FECHA NTO: </label>
+			<input type="date"><br>
+			<br>
+			<label> EDAD: </label>
+			<input type="number">
+		</fieldset>
+	</form>
+	<h2> QUE CALIFICACIÒN LE DAS A ESTOS GTA'S? </h2>
+
+	<label for="range1">Grand Theft Auto:</label>
+    <input type="range" id="range1" min="0" max="10" value="0" oninput="actualizarPorcentaje('range1', 'porcentaje1')">
+    <span id="porcentaje1">0</span>
+    <br><br>
+
+    <label for="range1">Grand Theft Auto 2:</label>
+    <input type="range" id="range2" min="0" max="10" value="0" oninput="actualizarPorcentaje('range2', 'porcentaje2')">
+    <span id="porcentaje2">0</span>
+    <br><br>
+
+	<label for="range1">Grand Theft Auto 3:</label>
+    <input type="range" id="range3" min="0" max="10" value="0" oninput="actualizarPorcentaje('range3', 'porcentaje3')">
+    <span id="porcentaje3">0</span>
+    <br><br>
+
+	<label for="range1">Grand Theft Auto: Vice City:</label>
+    <input type="range" id="range4" min="0" max="10" value="0" oninput="actualizarPorcentaje('range4', 'porcentaje4')">
+    <span id="porcentaje4">0</span>
+    <br><br>
+
+	<label for="range1">Grand Theft Auto: San Andreas:</label>
+    <input type="range" id="range5" min="0" max="10" value="0" oninput="actualizarPorcentaje('range5', 'porcentaje5')">
+    <span id="porcentaje5">0</span>
+    <br><br>
+
+	<label for="range1">Grand Theft Auto 4:</label>
+    <input type="range" id="range6" min="0" max="10" value="0" oninput="actualizarPorcentaje('range6', 'porcentaje6')">
+    <span id="porcentaje6">0</span>
+    <br><br>
+
+	<label for="range1">Grand Theft Auto 5:</label>
+    <input type="range" id="range7" min="0" max="10" value="0" oninput="actualizarPorcentaje('range7', 'porcentaje7')">
+    <span id="porcentaje7">0</span>
+    <br><br>
+
+
+				<script>
+			        function actualizarPorcentaje(rangeId, spanId) {
+			            var valorRange = document.getElementById(rangeId).value;
+			            document.getElementById(spanId).innerText = valorRange + "";
+			        }
+			    </script>
+
+    
+</body>
+</html>
